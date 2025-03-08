@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-black cursor-none;
+    @apply bg-black;
   }
 
   @media (max-width: 768px) {
@@ -27,7 +27,7 @@
   
   /* Hide cursor on clickable elements */
   button, a {
-    @apply cursor-none;
+    cursor: default;
   }
 }
 
