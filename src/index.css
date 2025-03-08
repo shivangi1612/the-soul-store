@@ -43,3 +43,9 @@
 ::-webkit-scrollbar-thumb {
   @apply bg-emerald-500 rounded-full;
 }
+
+@media (max-width: 768px) {
+  .blob-cursor {
+    display: none !important;
+  }
+}
