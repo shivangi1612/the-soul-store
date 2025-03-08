@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black cursor-none;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      @apply bg-gray-800;
+    }
+    button, a {
+      @apply text-lg;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      @apply bg-gray-700;
+    }
+    button, a {
+      @apply text-base;
+    }
+  }  
+  
+  /* Hide cursor on clickable elements */
+  button, a {
+    @apply cursor-none;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-emerald-500 rounded-full;
+}
