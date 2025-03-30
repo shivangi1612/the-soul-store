@@ -65,7 +65,7 @@ export default function ProductGrid({ cart, addToCart }) {
 
       {notification && (
         <div 
-          className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-emerald-600 text-white px-6 py-3 rounded-lg shadow-md text-center 
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-emerald-600 text-white px-6 py-3 rounded-lg shadow-md text-center 
                      w-[90%] md:w-auto md:left-3/4 md:-translate-x-2"
         >
           {notification}
